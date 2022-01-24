@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "TwilioSyncClient",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v12)
     ],
     products: [
         .library(
@@ -14,8 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TwilioSyncClient",
-            url: "https://media.twiliocdn.com/sdk/ios/sync/releases/1.1.0/twilio-sync-ios-1.1.0.zip",
-            checksum: "1f2ff3caea120cadfca0c9e50128489861836ab37aa46f411c164db15f6510e7"
+            url: "https://media.twiliocdn.com/sdk/ios/sync/releases/1.1.1/twilio-sync-ios-1.1.1.zip",
+            checksum: "818a9d2d005e866db0021b399c4f3ee50f248ac4b5a99f01fbb3ecfddf5ac443"
         )
     ]
 )
