@@ -19,7 +19,7 @@ We support integration using CocoaPods as well. You can add Twilio Sync Client t
 ```ruby
 source 'https://github.com/CocoaPods/Specs'
 
-platform :ios, '11.0'
+platform :ios, '12.0'
 
 target 'TARGET_NAME' do
     pod 'TwilioSyncClient', '~> 1.1'
