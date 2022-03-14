@@ -22,7 +22,7 @@ source 'https://github.com/CocoaPods/Specs'
 platform :ios, '12.0'
 
 target 'TARGET_NAME' do
-    pod 'TwilioSyncClient', '~> 1.1'
+    pod 'TwilioSyncClient', '~> 1.2'
 end
 ```
 
