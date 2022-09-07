@@ -14,8 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TwilioSyncClient",
-            url: "https://media.twiliocdn.com/sdk/ios/sync/releases/1.2.0/twilio-sync-ios-1.2.0.zip",
-            checksum: "4ef0b8fd195bb9f3c77c29d6560db289e29ebe9525d7ae0b25b0b7962bedac56"
+            url: "https://sdk.twilio.com/ios/sync/releases/1.2.1/twilio-sync-ios-1.2.1.zip",
+            checksum: "2dd01bea43263c616c96ec1caf439f1b0a9e9b5aced3da140c102a112e0d4278"
         )
     ]
 )
