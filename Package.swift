@@ -2,34 +2,33 @@
 import PackageDescription
 
 let package = Package(
-    name: "TwilioSyncClient",
+    name: "TwilioSync",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "TwilioSyncClient",
-            targets: ["TwilioSyncClientTarget"]),
-    ],
-    dependencies: [
-        .package(
-            name: "TwilioTwilsockLib",
-            url: "https://github.com/twilio/twilsock-ios",
-            .upToNextMajor(from: "2.0.1"))
+            name: "TwilioSync",
+            targets: ["TwilioSyncTarget"]),
     ],
     targets: [
         .target(
-          name: "TwilioSyncClientTarget",
+          name: "TwilioSyncTarget",
           dependencies: [
-              .target(name: "TwilioSyncClient"), 
-              .product(name: "TwilioTwilsockLib", package: "TwilioTwilsockLib")
+              .target(name: "TwilioSync"),
+              .target(name: "TwilioSyncLib"),
           ],
           path: "Dummy"
         ),
         .binaryTarget(
-            name: "TwilioSyncClient",
-            url: "https://sdk.twilio.com/ios/sync/releases/2.0.2/twilio-sync-ios-2.0.2.zip",
-            checksum: "d9969a26757b642b6aee86849e22f9c8cd1c764d2275178dc0816625ac8ab170"
+            name: "TwilioSync",
+            url: "https://github.com/twilio/twilio-sync-ios/releases/download/v3.0.0-beta1/twilio-sync-3.0.0-beta1.zip",
+            checksum: "47e612846dbf5a827245b746d9760a6d755978e5d846a8bda15b0592ec8c246f"
+        ),
+        .binaryTarget(
+            name: "TwilioSyncLib",
+            url: "https://github.com/twilio/twilio-sync-ios/releases/download/v3.0.0-beta1/twilio-sync-lib-3.0.0-beta1.zip",
+            checksum: "a51c7ea53eec7fbc38c3b18f5b68c5abea24754ce2ee9f28a52d5b4a854bae10"
         ),
     ]
 )
